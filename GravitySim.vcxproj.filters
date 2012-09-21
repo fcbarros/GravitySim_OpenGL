@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{08996849-40fa-442d-9ddc-b4092cddc82f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\Header Files">
+      <UniqueIdentifier>{f30863a4-9ce4-4521-ad1d-af6ebd9f37a5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Utils\Source Files">
+      <UniqueIdentifier>{44140a6c-4ee9-4e2a-9e1d-59f552dfacfa}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Utils\xml">
+      <UniqueIdentifier>{9014ec44-a170-4b3a-bfd1-3d5fd562daaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\xml\Header Files">
+      <UniqueIdentifier>{5c91b633-2c52-46e8-b087-b5bc660a7c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\xml\Source Files">
+      <UniqueIdentifier>{dfb56a1e-8b59-4ec1-bcab-21a7f61bdf6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{321385da-8354-4a33-bb16-7bf57fcaf51b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Header Files">
+      <UniqueIdentifier>{7c43987a-5cb0-47b3-893d-9995579f4edc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Source Files">
+      <UniqueIdentifier>{aac0fe6f-7681-4d44-8c59-2dc5336ddbd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{b04c0db0-8d65-413f-91d7-d8c630ce63d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface\Header Files">
+      <UniqueIdentifier>{a62bdcb8-a7a8-4b08-9153-d8d06f3e917f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface\Source Files">
+      <UniqueIdentifier>{e0cdf1d1-314b-4fa6-ae86-58ac60c3d97d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{57320168-eb65-4306-9b13-b107e3237263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Main\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Main\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utils\CDraw.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CCamera.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CColorMap.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CFileLoader.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CGLFont.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CHistory.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CRender.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CTexture.cpp">
+      <Filter>Utils\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\xml\xml.cpp">
+      <Filter>Utils\xml\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CMatrix.cpp">
+      <Filter>Math\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\CSpeedMath.cpp">
+      <Filter>Math\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\TVector3D.cpp">
+      <Filter>Math\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CUICheckBox.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CUIGroup.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CUIImageButton.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CUIImagePushButton.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CUISimpleBG.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CUISimpleTextBox.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\CUIWindow.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\IUInterface.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\UIUtil.cpp">
+      <Filter>Interface\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGravity.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMassObject.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSimulator.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GravitySim.cpp">
+      <Filter>Main\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\CCamera.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CColorMap.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CDraw.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CFileLoader.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CGLFont.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CHistory.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ColorTablesDefines.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Common.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CRender.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CTexture.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralIncludes.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\jpg\include\jpeglib.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\TSingleton.h">
+      <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\xml\mime.h">
+      <Filter>Utils\xml\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\xml\xml.h">
+      <Filter>Utils\xml\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CMatrix.h">
+      <Filter>Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\CSpeedMath.h">
+      <Filter>Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\TVector3D.h">
+      <Filter>Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CUICheckBox.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CUIGroup.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CUIImageButton.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CUIImagePushButton.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CUISimpleBG.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CUISimpleTextBox.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\CUIWindow.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\IUInterface.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\UIUtil.h">
+      <Filter>Interface\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CGravity.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMassObject.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSimulator.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GravitySim.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Main\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GravitySim.ico">
+      <Filter>Main\Resource Files</Filter>
+    </None>
+    <None Include="small.ico">
+      <Filter>Main\Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GravitySim.rc">
+      <Filter>Main\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

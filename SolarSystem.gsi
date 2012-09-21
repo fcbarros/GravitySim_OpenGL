@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--
+Configuration file for the Gravity Simulator
+All units are in Meters for distance, Seconds for time and Meters/Second for velocity
+-->
+
+<root>
+
+    <!-- Time of the start of the simulation -->
+    <time>
+        <day value="01"/>
+        <month value="01"/>
+        <year value="2007"/>
+        <hour value="00"/>
+        <minute value="00"/>
+        <second value="00"/>
+    </time>
+
+    <!-- General confiration section -->
+    <config>
+        <!-- Time constant is a constant that multiplies the real time passed
+             That means that for each real second time_constant seconds will pass
+             in the simulation -->
+        <time_constant value="496000.0"/>
+
+        <!-- Number of Iterations for each loop (higher=better/slower)-->
+        <num_iterations value="60"/>
+
+        <!-- Interval to save the history (seconds) -->
+        <history_save_interval value="0.2"/>
+
+    </config>
+
+    <skybox>
+        <file value="Images/StarsMap_2500x1250.jpg"/>
+    </skybox>
+    
+    <!-- Camera settings -->
+    <camera>
+        <!-- Camera Position (meters) -->
+        <position>
+            <x value="0.0"/>
+            <y value="0.0"/>
+            <z value="54125564435301.320"/>
+        </position>
+        <!-- Position where the camera is looking at (meters) -->
+        <lookat>
+            <x value="0.0"/>
+            <y value="0.0"/>
+            <z value="0.0"/>
+        </lookat>
+        <!-- The up vector (which direction is up)-->
+        <up>
+            <x value="0.0"/>
+            <y value="1.0"/>
+            <z value="0.0"/>
+        </up>
+    </camera>
+
+    <body>
+        <name value="Sun"/>
+        <mass value="1.9891e30"/>
+        <radius value="6.960e8"/>
+        <max_dist value="6.960e7"/>
+        <position>
+            <x value="3.525630498895757e8"/>
+            <y value="6.148641958480451e8"/>
+            <z value="-1.560209236343976e7"/>
+        </position>
+        <velocity>
+            <x value="-9.235546548983757"/>
+            <y value="6.758261846450031"/>
+            <z value="1.213397920139529e-1"/>
+        </velocity>
+        <color>
+            <r value="1.0"/>
+            <g value="1.0"/>
+            <b value="1.0"/>
+        </color>
+        <history_size value="0"/>
+        <light value="false"/>
+        <texture value="Images/sun.jpg"/>
+    </body>
+
+    <body>
+        <name value="Mercury"/>
+        <mass value="3.302e23"/>
+        <radius value="2440e3"/>
+        <max_dist value="2440e2"/>
+        <position>
+            <x value="-1.304485636988060e9"/>
+            <y value="-6.861125992130227e10"/>
+            <z value="-5.519170008559767e9"/>
+        </position>
+        <velocity>
+            <x value="3.892034130850818e4"/>
+            <y value="1.340928826592463e3"/>
+            <z value="-3.463384219765679e3"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Venus"/>
+        <mass value="48.685e23"/>
+        <radius value="6051.8e3"/>
+        <max_dist value="6051.8e2"/>
+        <position>
+            <x value="8.080318124430148e10"/>
+            <y value="-7.261808178956324e10"/>
+            <z value="-5.661049873729665e9"/>
+        </position>
+        <velocity>
+            <x value="2.333931165718979e4"/>
+            <y value="2.577316485582418e4"/>
+            <z value="-9.948846157666580e2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+        <texture value="Images/VenusMap_1024x512.jpg"/>
+    </body>
+
+    <body>
+        <name value="Earth"/>
+        <mass value="5.9736e24"/>
+        <radius value="6371.01e3"/>
+        <max_dist value="6371.01e2"/>
+        <position>
+            <x value="-2.537916321487068e10"/>
+            <y value="1.454442715150967e11"/>
+            <z value="-1.824441525447369e7"/>
+        </position>
+        <velocity>
+            <x value="-2.981222426922874e4"/>
+            <y value="-5.320520108724144e3"/>
+            <z value="-1.483461664597563e-2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+        <texture value="Images/EarthMap_1024x512.jpg"/>
+    </body>
+
+    <body>
+        <name value="Moon"/>
+        <mass value="734.9e20"/>
+        <radius value="1737.53e3"/>
+        <max_dist value="1737.53e2"/>
+        <position>
+            <x value="-2.523477495150752e10"/>
+            <y value="1.457882478150957e11"/>
+            <z value="1.397488368833065e7"/>
+        </position>
+        <velocity>
+            <x value="-3.077230836120710e4"/>
+            <y value="-4.890798527490026e3"/>
+            <z value="2.061545473529258e1"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+        <texture value="Images/MoonMap_1024x512.jpg"/>
+    </body>
+
+    <body>
+        <name value="Mars"/>
+        <mass value="6.4185e23"/>
+        <radius value="3389.9e3"/>
+        <max_dist value="3389.9e3"/>
+        <position>
+            <x value="-9.747279439014469e10"/>
+            <y value="-2.037417945269614e11"/>
+            <z value="-1.894095768130437e9"/>
+        </position>
+        <velocity>
+            <x value="2.275985577504060e4"/>
+            <y value="-8.378283825806619e3"/>
+            <z value="-7.348593114825288e2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="3000"/>
+        <texture value="Images/MarsMap_1024x512.jpg"/>
+    </body>
+
+    <body>
+        <name value="Jupiter"/>
+        <mass value="1898.6e24"/>
+        <radius value="69911e3"/>
+        <max_dist value="69911e2"/>
+        <position>
+            <x value="-3.698847574044209e11"/>
+            <y value="-7.115349322537634e11"/>
+            <z value="1.122563372847393e10"/>
+        </position>
+        <velocity>
+            <x value="1.143155113254860e4"/>
+            <y value="-5.410558653450819e3"/>
+            <z value="-2.334248164397603e2"/>
+        </velocity>
+        <color>
+            <r value="1.0"/>
+            <g value="1.0"/>
+            <b value="0.0"/>
+        </color>
+        <history_size value="0"/>
+        <light value="true"/>
+    </body>
+
+    <body>
+        <name value="Io"/>
+        <mass value="893.3e20"/>
+        <radius value="1821.3e3"/>
+        <max_dist value="1821.3e2"/>
+        <position>
+            <x value="-3.695270775990440e11"/>
+            <y value="-7.113126871266954e11"/>
+            <z value="1.123898236220771e10"/>
+        </position>
+        <velocity>
+            <x value="2.322660777030693e3"/>
+            <y value="9.357707275869950e3"/>
+            <z value="1.597428040108584e2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Europa"/>
+        <mass value="479.7e20"/>
+        <radius value="1565e3"/>
+        <max_dist value="1565e2"/>
+        <position>
+            <x value="-3.705480426200289e11"/>
+            <y value="-7.114733394475130e11"/>
+            <z value="1.122369624466306e10"/>
+        </position>
+        <velocity>
+            <x value="1.008073153090088e4"/>
+            <y value="-1.917849716002475e4"/>
+            <z value="-7.199147488497601e2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Ganymede"/>
+        <mass value="1482e20"/>
+        <radius value="2634e3"/>
+        <max_dist value="2634e2"/>
+        <position>
+            <x value="-3.689121372911822e11"/>
+            <y value="-7.119765886376288e11"/>
+            <z value="1.122096008877662e10"/>
+        </position>
+        <velocity>
+            <x value="1.594976039440550e4"/>
+            <y value="4.503064362351515e3"/>
+            <z value="1.933929996103352e2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Callisto"/>
+        <mass value="1076e20"/>
+        <radius value="2403e3"/>
+        <max_dist value="2403e2"/>
+        <position>
+            <x value="-3.714451173949308e11"/>
+            <y value="-7.104611296123579e11"/>
+            <z value="1.123935127116442e10"/>
+        </position>
+        <velocity>
+            <x value="6.783638870498566e3"/>
+            <y value="-1.210310175352143e4"/>
+            <z value="-5.111110621622093e2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Saturn"/>
+        <mass value="5.68462313752e26"/>
+        <radius value="58232e3"/>
+        <max_dist value="58232e2"/>
+        <position>
+            <x value="-1.052262454388452e12"/>
+            <y value="8.817540857875291e11"/>
+            <z value="2.653231810391039e10"/>
+        </position>
+        <velocity>
+            <x value="-6.720098451059043e3"/>
+            <y value="-7.426527844551165e3"/>
+            <z value="3.965092065905398e2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Uranus"/>
+        <mass value="86.832e24"/>
+        <radius value="25362e3"/>
+        <max_dist value="25362e2"/>
+        <position>
+            <x value="2.887305689471698e12"/>
+            <y value="-8.323840861070690e11"/>
+            <z value="-4.050027432443726e10"/>
+        </position>
+        <velocity>
+            <x value="1.836777410172209e3"/>
+            <y value="6.226160739931276e3"/>
+            <z value="-5.793229726971383e-1"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Neptune"/>
+        <mass value="102.43e24"/>
+        <radius value="24624e3"/>
+        <max_dist value="24624e2"/>
+        <position>
+            <x value="3.401981381457217e12"/>
+            <y value="-2.938410949225116e12"/>
+            <z value="-1.788995959844553e10"/>
+        </position>
+        <velocity>
+            <x value="3.516499873343713e3"/>
+            <y value="4.144484132798498e3"/>
+            <z value="-1.666601544801800e2"/>
+        </velocity>
+        <color>
+            <r value="0.2"/>
+            <g value="1.0"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Pluto"/>
+        <mass value="1.314e22"/>
+        <radius value="1151e3"/>
+        <max_dist value="1151e2"/>
+        <position>
+            <x value="-2.809366724890081e11"/>
+            <y value="-4.625642517192624e12"/>
+            <z value="5.762336201006136e11"/>
+        </position>
+        <velocity>
+            <x value="5.519163507834274e3"/>
+            <y value="-1.348676236171702e3"/>
+            <z value="-1.472114341141183e3"/>
+        </velocity>
+        <color>
+            <r value="0.1"/>
+            <g value="0.5"/>
+            <b value="1.0"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Ceres"/>
+        <mass value="9.46e20"/>
+        <radius value="942e3"/>
+        <max_dist value="942e2"/>
+        <position>
+            <x value="4.256021277831012e11"/>
+            <y value="-1.056441783149633e11"/>
+            <z value="-8.169482576396424e10"/>
+        </position>
+        <velocity>
+            <x value="3.669372405767622e3"/>
+            <y value="1.616170801105339e4"/>
+            <z value="-1.746778022143927e2"/>
+        </velocity>
+        <color>
+            <r value="0.1"/>
+            <g value="0.5"/>
+            <b value="1.0"/>
+        </color>
+        <history_size value="6000"/>
+    </body>
+
+    <body>
+        <name value="Vesta"/>
+        <mass value="2.7e20"/>
+        <radius value="532e3"/>
+        <max_dist value="532e2"/>
+        <position>
+            <x value="-3.078978026795001e11"/>
+            <y value="-1.176592670547112e11"/>
+            <z value="4.099052750353633e10"/>
+        </position>
+        <velocity>
+            <x value="8.586455846663132e3"/>
+            <y value="-1.864822598993249e4"/>
+            <z value="-4.822614301156873e2"/>
+        </velocity>
+        <color>
+            <r value="0.5"/>
+            <g value="0.5"/>
+            <b value="0.5"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Halley"/>
+        <mass value="102400e3"/>
+        <radius value="6.253e3"/>
+        <max_dist value="3e3"/>
+        <position>
+            <x value="-2.931421734275245e12"/>
+            <y value="3.242055974522562e12"/>
+            <z value="-1.340303379251134e12"/>
+        </position>
+        <velocity>
+            <x value="-9.802090296344169e2"/>
+            <y value="2.637093816697166e3"/>
+            <z value="-7.056175639939806e2"/>
+        </velocity>
+        <color>
+            <r value="0.5"/>
+            <g value="0.5"/>
+            <b value="0.5"/>
+        </color>
+        <history_size value="100000"/>
+    </body>
+
+    <body>
+        <name value="Borrelly"/>
+        <mass value="363e3"/>
+        <radius value="3.63e3"/>
+        <max_dist value="5e3"/>
+        <position>
+            <x value="1.141651172159081e11"/>
+            <y value="-6.490357398049073e11"/>
+            <z value="-1.599401198136556e11"/>
+        </position>
+        <velocity>
+            <x value="7.146686403283569e3"/>
+            <y value="9.329551459455550e3"/>
+            <z value="-2.680884789216532e3"/>
+        </velocity>
+        <color>
+            <r value="0.5"/>
+            <g value="0.5"/>
+            <b value="0.5"/>
+        </color>
+        <history_size value="10000"/>
+    </body>
+
+    <body>
+        <name value="New Horizons"/>
+        <mass value="478"/>
+        <radius value="2"/>
+        <max_dist value="5e3"/>
+        <position>
+            <x value="-3.138123931139953e11"/>
+            <y value="-6.356915797263269e11"/>
+            <z value="8.949862923482746e9"/>
+        </position>
+        <velocity>
+            <x value="-4.638035503166792e1"/>
+            <y value="-2.010962329422054e4"/>
+            <z value="1.536992044695893e2"/>
+        </velocity>
+        <color>
+            <r value="1.0"/>
+            <g value="0.2"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="1000"/>
+    </body>
+
+    <body>
+        <name value="Voyager 1"/>
+        <mass value="721.9"/>
+        <radius value="2"/>
+        <max_dist value="20e3"/>
+        <position>
+            <x value="-3.516681750433770e12"/>
+            <y value="-1.194540236154459e13"/>
+            <z value="8.650877087121252e12"/>
+        </position>
+        <velocity>
+            <x value="-2.105578512385068e3"/>
+            <y value="-1.377581641161136e4"/>
+            <z value="9.951738067567964e3"/>
+        </velocity>
+        <color>
+            <r value="1.0"/>
+            <g value="0.2"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <body>
+        <name value="Voyager 2"/>
+        <mass value="721.9"/>
+        <radius value="2"/>
+        <max_dist value="20e3"/>
+        <position>
+            <x value="3.318632302083660e12"/>
+            <y value="-9.898871967043194e12"/>
+            <z value="-6.319397186184860e12"/>
+        </position>
+        <velocity>
+            <x value="4.301788323165782e3"/>
+            <y value="-9.579933414965796e3"/>
+            <z value="-1.149598818345220e4"/>
+        </velocity>
+        <color>
+            <r value="1.0"/>
+            <g value="0.2"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+
+    <!--
+    <body>
+        <name value="Hubble Space Telescope"/>
+        <mass value="11110"/>
+        <radius value="6.6"/>
+        <position>
+            <x value="-2.537262241095086e10"/>
+            <y value="1.454464070783999e11"/>
+            <z value="-1.914545629277080e7"/>
+        </position>
+        <velocity>
+            <x value="-3.201656271224132e4"/>
+            <y value="-9.762626959125569e2"/>
+            <z value="-5.796873375787778e3"/>
+        </velocity>
+        <color>
+            <r value="1.0"/>
+            <g value="0.2"/>
+            <b value="0.2"/>
+        </color>
+        <history_size value="0"/>
+    </body>
+    -->
+
+</root>

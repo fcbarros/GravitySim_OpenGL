@@ -1,0 +1,227 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_ADDEDIT_OBJECT DIALOGEX 0, 0, 223, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW
+CAPTION "Add/Edit Object"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,194,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,194,50,14
+    LTEXT           "Name:",IDC_STATIC,7,7,22,8
+    EDITTEXT        IDC_EDIT_AEO_NAME,7,15,209,14,ES_AUTOHSCROLL
+    LTEXT           "Mass (KG):",IDC_STATIC,7,31,36,8
+    EDITTEXT        IDC_EDIT_AEO_MASS,7,39,209,14,ES_AUTOHSCROLL
+    LTEXT           "Radius (m):",IDC_STATIC,7,55,38,8
+    EDITTEXT        IDC_EDIT_AEO_RADIUS,7,63,209,14,ES_AUTOHSCROLL
+    LTEXT           "Position (m,m,m):",IDC_STATIC,7,79,57,8
+    EDITTEXT        IDC_EDIT_AEO_POSX,7,87,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AEO_POSY,77,87,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AEO_POSZ,147,87,69,14,ES_AUTOHSCROLL
+    LTEXT           "Velocity (m/s,m/s,m/s):",IDC_STATIC,7,103,75,8
+    EDITTEXT        IDC_EDIT_AEO_VELX,7,111,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AEO_VELY,77,111,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AEO_VELZ,147,111,69,14,ES_AUTOHSCROLL
+    LTEXT           "Color (R,G,B):",IDC_STATIC,7,127,46,8
+    EDITTEXT        IDC_EDIT_AEO_COLORR,7,135,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AEO_COLORG,77,135,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AEO_COLORB,147,135,69,14,ES_AUTOHSCROLL
+    LTEXT           "Texture File:",IDC_STATIC,7,151,42,8
+    EDITTEXT        IDC_EDIT_AEO_TEXTURE,7,159,163,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BUTTON_AEO_TEXTURE_BROWSE,173,158,43,14
+    CONTROL         "Is Light Source",IDC_CHECK_AOE_LIGHT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,178,63,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_ADDEDIT_OBJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 240, 125
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    ICON            IDI_SMALL,IDC_MYICON,14,9,20,20
+    LTEXT           "Gravity Simulator Version 1.0",IDC_STATIC_NAME,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC_COPYRIGHT,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+    CTEXT           "Fabio C Barros (fabio.c.barros@gmail.com)",IDC_STATIC_COPYRIGHT2,0,36,239,8
+    LTEXT           "Giovanni Formighieri for the Ideas and Astronomy Data",IDC_STATIC_COPYRIGHT3,40,67,180,8
+    LTEXT           "Thanks To:",IDC_STATIC_NAME,26,56,37,8
+    LTEXT           "Michael Chourdakis for the XML code",IDC_STATIC_COPYRIGHT4,40,75,180,8
+    LTEXT           "Brad Fish and Henri Kyrki for the GLFont",IDC_STATIC_COPYRIGHT5,40,83,180,8
+    LTEXT           "Ronny André Reierstad for the Images code",IDC_STATIC_NAME,40,91,142,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SMALL               ICON                    "small.ico"
+IDI_GRAVITYSIM          ICON                    "GravitySim.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_GRAVITY_OPENGL MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open",                       IDC_OPEN_FILE
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "Options"
+    BEGIN
+        POPUP "Integrator"
+        BEGIN
+            MENUITEM "Old",                         ID_INTEGRATOR_OLD
+            MENUITEM "New",                         ID_INTEGRATOR_NEW, CHECKED
+        END
+        POPUP "Gravity Field"
+        BEGIN
+            MENUITEM "2D - Colors",                 ID_GRAVITYFIELD_2D_COLORS
+            MENUITEM "2D - Depth",                  ID_GRAVITYFIELD_2D_DEPTH
+            MENUITEM "2D - Vectors",                ID_GRAVITYFIELD_2D_VECTORS, CHECKED
+            MENUITEM "3D - Colors",                 ID_GRAVITYFIELD_3D_COLORS
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_GRAVITY_OPENGL ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "Gravity Simulator"
+    IDC_GRAVITY_OPENGL      "GRAVITY_SIMULATOR"
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

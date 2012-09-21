@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--
+Configuration file for the Gravity Simulator
+All units are in Meters for distance, Seconds for time and Meters/Second for velocity
+-->
+
+<root>
+
+    <!-- General confiration section -->
+    <config>
+        <!-- Time constant is a constant that multiplies the real time passed
+             That means that for each real second time_constant seconds will pass
+             in the simulation -->
+        <time_constant value="200.0"/><!-- 60 * 60 * 24 * 4 = 345600 s (4 days)-->
+
+        <!-- Number of Iterations for each loop (higher=better/slower)-->
+        <num_iterations value="500"/>
+
+        <!-- Interval to save the history seconds -->
+        <history_save_interval value="0.2"/>
+
+    </config>
+
+    <!-- Camera settings -->
+    <camera>
+        <!-- Camera Position (meters) -->
+        <position>
+            <x value="0.0"/>
+            <y value="0.0"/>
+            <z value="2520187613.2376"/>
+        </position>
+        <!-- Position where the camera is looking at (meters) -->
+        <lookat>
+            <x value="0.0"/>
+            <y value="0.0"/>
+            <z value="0.0"/>
+        </lookat>
+        <!-- The up vector (which direction is up)-->
+        <up>
+            <x value="0.0"/>
+            <y value="1.0"/>
+            <z value="0.0"/>
+        </up>
+    </camera>
+    
+    <body>
+        <name value="1"/>
+        <mass value="0.4e31"/>
+        <radius value="1e5"/>
+        <position>
+            <x value="1e9"/>
+            <y value="0"/>
+            <z value="0"/>
+        </position>
+        <velocity>
+            <x value="0"/>
+            <y value="5e5"/>
+            <z value="0"/>
+        </velocity>
+        <color>
+            <r value="1.0"/>
+            <g value="0.0"/>
+            <b value="0.0"/>
+        </color>
+        <history_size value="4000"/>
+    </body>
+
+    <body>
+        <name value="2"/>
+        <mass value="0.4e31"/>
+        <radius value="1e5"/>
+        <position>
+            <x value="-1e9"/>
+            <y value="0"/>
+            <z value="0"/>
+        </position>
+        <velocity>
+            <x value="0"/>
+            <y value="5e5"/>
+            <z value="0"/>
+        </velocity>
+        <color>
+            <r value="0.0"/>
+            <g value="1.0"/>
+            <b value="0.0"/>
+        </color>
+        <history_size value="4000"/>
+    </body>
+
+</root>
